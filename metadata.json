@@ -1,0 +1,6 @@
+{
+  "name": "CPORT IMMIGRATION AI",
+  "description": "Premium AI-powered preliminary entrepreneur immigration assessments for Canada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
