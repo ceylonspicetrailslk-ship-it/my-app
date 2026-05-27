@@ -48,7 +48,7 @@ Respond with a JSON object ONLY, containing:
     }));
 
     const response = await ai.models.generateContent({
-      model: 'gemini-1.5-flash-latest',
+      model: 'gemini-1.5-pro',
       contents: formattedMessages,
       config: {
         systemInstruction: systemInstruction,
