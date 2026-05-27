@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-cport-navy: #0A192F;
+  --color-cport-navy-light: #112240;
+  --color-cport-navy-lighter: #233554;
+  --color-cport-red: #D32F2F;
+  --color-cport-gray: #8892B0;
+  --color-cport-light: #CCD6F6;
+  --color-cport-white: #E6F1FF;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F8FAFC] text-slate-800 antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-xl;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+  }
+  .glass-panel {
+    border: 1px solid #e2e8f0 !important;
+    background: white !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    margin-bottom: 24px;
+  }
+  /* Ensure the dashboard is scrollable for printing full content */
+  .overflow-hidden {
+    overflow: visible !important;
+  }
+  .overflow-y-auto {
+    overflow: visible !important;
+  }
+}
